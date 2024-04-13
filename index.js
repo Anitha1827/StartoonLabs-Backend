@@ -10,6 +10,9 @@ dotenv.config();
 //middlewares
 let app = express();
 app.use(cors());
+const corsOptions = {
+    origin: 'https://startoonlab-app.netlify.app',
+  };
 app.use(express.json());
 let PORT = process.env.PORT || 8000;
 
